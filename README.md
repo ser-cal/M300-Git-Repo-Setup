@@ -13,7 +13,7 @@ Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einst
 - Windows: [GitBash](https://git-scm.com/downloads) auf dem lokalen Host installiert
 - Mac oder Linux: (Bash bereits vorhanden, sonst ebenfalls auf [GitBash](https://git-scm.com/downloads)) verfügbar
 - Editor: z.B: [Visual Studio Code](https://code.visualstudio.com/) , [Atom](https://atom.io/) oder [Sublime Text](https://www.sublimetext.com/) etc...
-<br><br>
+<br>
 
 Das folgende Dokument ist wie folgt strukturiert:
 
@@ -30,7 +30,7 @@ Git ist sehr umfangreich. Für den täglichen Gebrauch reichen aber wenige Komma
 
 ## Was ist GIT ##
 
-GIT ist ein sogenanntes **Versionskontrollsystem** (VCS) und wurde Anfang 2005 von Linus Torvalds, dem Initiator des Linux-Kernels, entwickelt. Es erstaunt deshalb nicht, dass GIT konzeptionell ähnlich aufgebaut ist wie ein Linux-Filesystem. <br>
+GIT ist ein sogenanntes **Versionskontrollsystem** (VCS) und wurde Anfang 2005 von Linus Torvalds, dem Initiator des Linux-Kernels, entwickelt. Es erstaunt deshalb nicht, dass GIT konzeptionell ähnlich aufgebaut ist wie ein Linux-Filesystem. <br><br>
 Torvalds wünschte sich ein verteiltes System, welches folgenden Anforderungen erfüllt:
 
 - Unterstützung verteilter Arbeitsabläufe (Mehrere können an einem Projekt arbeiten)
@@ -48,7 +48,7 @@ Solange die Daten nur lokal mit GIT getracked werden, spricht man von **VCS**
 
 - **DVCS** (Distributed Version Control System)<br>
 Sobald die Daten zusätzlich für andere (Contributors) freigegeben werden, spricht man nicht mehr von **VCS**, sondern von  **DVCS** (**D**istributed **V**ersion **C**ontrol **S**ystem)
-<br><br>
+<br>
 
 Hier nochmals die wichtigsten Merkmale eines **Distributed Version Control Systems**
 
