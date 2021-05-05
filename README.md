@@ -55,11 +55,9 @@ Hier nochmals die wichtigsten Merkmale eines **Distributed Version Control Syste
 ![Was ist Git](images/01_Was-ist-GIT.jpg) <br><br>
 
 ---
-<br>
 
 ## Git lokal einrichten und ein erstes Repository initialisieren ##
 In diesem Kapitel werden wir zuerst GIT auf dem lokalen Rechner konfigurieren und anschliessend das Grundgerüst für das M300-Repository einrichten
-<br>
 
 ### Git Standard-kommandos (good to know)
 
@@ -70,8 +68,6 @@ In diesem Kapitel werden wir zuerst GIT auf dem lokalen Rechner konfigurieren un
 > `$ man git ` _Manual Pages_ <br>
 > `$ git help  ` _Allgemeine Hilfe / Quick Reference Porcelaine Commands_ <br>
 > `$ git help config  ` _Spezifische Hilfe (in diesem Fall zu "Configuration"_<br>
-
-<br>
 
 ### Git Konfigurations Dateien
 
@@ -84,15 +80,12 @@ Git hat folgende Konfigurationsdateien. Jede Ebene überschreibt die obige
 * **Repository** ( --local )
     * `o	[GIT-REPOSITORY/]/.git/config`
 
-<br>
 
 Separate Auflistung (System, Global und Local)
 
 > `$ git config --list --system  ` _zeigt die aktuelle System-Konfiguration_<br>
 > `$ git config --list --global  ` _zeigt die globalen Settings_ <br>
 > `$ git config --list --local  ` _zeigt die lokalen Settings_ <br>
-
-<br>
 
 Beispiel für eine **globale** Konfiguration (in unserem Fall eine geeignetes Setup):
 
@@ -119,16 +112,31 @@ $ git config --global user.email marco.brunner@tbz.ch
 
 Jetzt geht es darum, ein *vorhandenes, lokales Verzeichnis* unter **Git Versionskontrolle** zu bringen und dieses anschliessend in das *remote Repository*  von [Github][10] zu pushen.
 
-### Remote Git Repository erstellen
+## Remote Git Repository erstellen
 
-Vorbereitend erstellen wir auf [Github][10], ein neues, leeres Repository.
+Vorbereitend für das **M300** erstellen wir auf [Github][10], ein neues, leeres Repository, mit welchem wir weiter unten dann das lokale Repository verknüpfen
 
 > Ein hinterlegter **SSH-PublicKey** des lokalen Benutzers/Rechner ist Voraussetzung <br>
 > Das Erstellen und Einrichten ist in den [GitHub Docs][11] ausführlich dokumentiert 
 
+<br>
+
+Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten dient zur Ergänzung_):
+
+> `Repository name:  ` _M300-Services_<br>
+> `Description  ` _Microservices / Containerumgebungen_ <br>
+> `Private:  ` _Repo auf "Private" setzen und LP einladen_<br>
+> `Initialize this repository with:  ` _NICHTS ankreuzen - erfolgt zu einem späteren Zeitpunkt_ <br>
 
 
-Nachdem wir ein neues Repository in [Gitlab][10] oder [Github][11] erstellt haben, erhalten wir Informationen (passend zum eben erstellten Repository)  über den Import von existierenden lokalen Folder Strukturen in das eben erstellte remote Repsitory. Die Anweisungen sind fast identisch.
+
+  ![Was ist Git](images/20_Github-Repo_erstellen.png)
+ <br>
+
+
+
+
+Nachdem wir ein neues Repository in [Github][10] erstellt haben, erhalten wir Informationen (passend zum eben erstellten Repository)  über den Import von existierenden lokalen Folder Strukturen in das eben erstellte remote Repsitory. Die Anweisungen sind fast identisch.
 <br><br>
 
 ---
