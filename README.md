@@ -13,7 +13,6 @@ Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einst
 - Windows: [GitBash](https://git-scm.com/downloads) auf dem lokalen Host installiert
 - Mac oder Linux: (Bash bereits vorhanden, sonst ebenfalls auf [GitBash](https://git-scm.com/downloads)) verfügbar
 - Editor: z.B: [Visual Studio Code](https://code.visualstudio.com/) , [Atom](https://atom.io/) oder [Sublime Text](https://www.sublimetext.com/) etc...
-<br>
 
 ## Das folgende Dokument ist wie folgt strukturiert:
 1. Im **ersten Abschnitt** **[Was ist GIT](#Was-ist-GIT)** wird grundsätzlich erklärt was GIT genau ist und welche Vorteile sich durch die Anwendung von GIT ergeben.
@@ -119,7 +118,7 @@ Vorbereitend für das **M300** erstellen wir auf [Github][10], ein neues, leeres
 
 <br>
 
-Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten dient zur Ergänzung_):
+Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten dient als Beispiel_):
 
 > `Repository name:  ` _M300-Services_<br>
 > `Description  ` _Microservices / Containerumgebungen_ <br>
