@@ -15,13 +15,12 @@ Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einst
 - Editor: z.B: [Visual Studio Code](https://code.visualstudio.com/) , [Atom](https://atom.io/) oder [Sublime Text](https://www.sublimetext.com/) etc...
 <br>
 
-Das folgende Dokument ist wie folgt strukturiert:
+## Das folgende Dokument ist wie folgt strukturiert:
+1. Im **ersten Abschnitt** **[Was ist GIT](#Was-ist-GIT)** wird grundsätzlich erklärt was GIT genau ist und welche Vorteile sich durch die Anwendung von GIT ergeben.
 
-Im ersten Abschnitt **[Was ist GIT](#Was-ist-GIT)** wird grundsätzlich erklärt was GIT genau ist und welche Vorteile sich durch die Anwendung von GIT ergeben.
+2. Im **zweiten Abschnitt** **[Git lokal einrichten und ein erstes Repository initialisieren und synchronisieren](#Git-lokal-einrichten-und-ein-erstes-Repository-initialisieren-und-synchronisieren)** werden die nötigen Schritte erläutert, welche zum Starten mit einem lokalen- und remote Git Repository nötig sind. 
 
-Im zweiten Abschnitt **[Git lokal einrichten und ein erstes Repository initialisieren](#Git-lokal-einrichten-und-ein-erstes-Repository-initialisieren)** werden die nötigen Schritte erläutert, welche zum Starten mit einem lokalen- und remote Git Repository nötig sind. 
-
-Im dritten Abschnitt **[Arbeiten mit Git](#arbeiten-mit-git)** geht es darum, die wichtigsten *Handgriffe* im Umgang mit Git zu lernen.
+3. Im **dritten Abschnitt**  **[Arbeiten mit Git](#arbeiten-mit-git)** geht es darum, die wichtigsten *Handgriffe* im Umgang mit Git zu lernen.
 
 Git ist sehr umfangreich. Für den täglichen Gebrauch reichen aber wenige Kommandos und ein **generelles Verständnis über die Funktionsweise von Git**. Diese sind im **[Pro Git book][21]** (Kapitel 1 und 2) sehr gut beschrieben.  Alle in diesem Dokument verwendeten Kommandos finden sie ebefalls in diesen beiden Kapiteln wieder 
 
@@ -56,7 +55,7 @@ Hier nochmals die wichtigsten Merkmale eines **Distributed Version Control Syste
 
 ---
 
-## Git lokal einrichten und ein erstes Repository initialisieren ##
+## Git lokal einrichten und ein erstes Repository initialisieren und synchronisieren ##
 In diesem Kapitel werden wir zuerst GIT auf dem lokalen Rechner konfigurieren und anschliessend das Grundgerüst für das M300-Repository einrichten
 
 ### Git Standard-kommandos (good to know)
