@@ -107,7 +107,7 @@ $ git config --global user.email marco.brunner@tbz.ch
 
 ### Starten mit einem neuen Git-Repository 
 
-Als erstes wird auf Github ein Repository erstellt. Danach wird ein *vorhandenes, lokales Verzeichnis* unter **Git Versionskontrolle** gebracht. Im dritten Schritt werden diese beiden Repos synchronisiert (verknüpft), um die lokalen Daten in das *remote Repository*  von [Github][10] zu **pushen** oder umgekehrt, die Daten von [Github][10] zu **pullen**.
+Als erstes wird auf Github ein Repository erstellt. Danach bringen wir ein *vorhandenes, lokales Verzeichnis* unter **Git Versionskontrolle**, um diese beiden Repos anschliessend zu synchronisieren (verknüpfen). Ab dann können die lokalen Daten in das *remote Repository*  von [Github][10] **"ge"pushed** - oder umgekehrt, die Daten von [Github][10] in das lokale Repository **"ge"pulled** werden.
 
 ### Remote Git Repository erstellen
 
@@ -118,7 +118,7 @@ Vorbereitend für das **M300** erstellen wir auf [Github][10], ein neues, leeres
 
 <br>
 
-Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten dient als Beispieleixt_):
+Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten dient als Beispiel_):
 
 > `Repository name:  ` _M300-Services_<br>
 > `Description  ` _Microservices / Containerumgebungen_ <br>
