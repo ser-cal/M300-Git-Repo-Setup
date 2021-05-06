@@ -156,15 +156,13 @@ Mit den folgenden Kommandos wird ein erstes File im getrackten Verzeichnis erste
 > `$ git add .   ` _Added alle Files im aktuellen Verzeichnis zur "Staging area"._ <br>
 > `$ git commit -m "First Commit  ` _Files werden ab jetzt lokal getracked_ <br>
 > `$ ls -al .git  ` _Checken, ob Metadaten im .git-Verzeichnis vorhanden sind_ 
-<br>
-
 
 #### Synchronisation des lokalen Repos mit dem Github-Repository (Origin)
 ...jetzt muss das lokale Repository mit dem Remote-Repository gesynched werden, damit ich das kollaborative Arbeiten daran ermögliche. Im nächsten Schritt wird das lokale Repository mit dem auf Github-Repository einmalig "verlinkt". Danach kann das Repository jeweils **ge"pushed"**, **ge"pulled"**, **ge"klont"**, **ge"forked"** oder **ge"branched"** werden. <br> 
 Dies geschieht mit folgendem Kommandeo:
 
-> `$ git remote add origin https://github.com/<Benutzername>/M300-Services.git   ` _Verlinken der beiden Repositories_ <br>
-> `$ git push -u origin master   ` _danach Github-Passwort eingeben_
+> `$ git remote add origin https://github.com/<Benutzername>/M300-Services.git   ` _Verlinken der Repos_ <br>
+> `$ git push -u origin master   ` _Github-Passwort eingeben und hochladen_
 
 
 
