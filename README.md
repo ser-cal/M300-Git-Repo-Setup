@@ -8,7 +8,7 @@
 
 Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einsteigen können und beim Durcharbeiten gleichzeitig ein Repository mit einer Grundstruktur für das Modul 300 aufsetzen<br>
 
-Das Grundgerüst dieses Tutorials durfte ich von Marco Berger (marco.berger@tbz.ch) übernehmen. Es ist von mir so ergänzt worden, dass die Anwendung im Modul 300 vereinfacht und vereinheitlicht werden soll.        _Vielen Dank Marco, für die Freigabe und die tolle Vorarbeit!_
+Das Grundgerüst dieses Tutorials durfte ich von Marco Berger (marco.berger@tbz.ch) übernehmen. Es ist von mir so ergänzt worden, dass die Anwendung im Modul 300 vereinfacht und vereinheitlicht werden soll.        _Vielen Dank Marco, für die Freigabe und die umfangreiche Vorarbeit!_
 
 ## Voraussetzungen:
 - [Github](https://github.com/) Account
@@ -192,9 +192,11 @@ Jetzt sind wir bereit, um das Repository aktiv zu bewirtschaften - **IaC** (Infr
 Jetzt, wo alles soweit bereit ist, um loszulegen, setzten wir uns noch kurz mit dem bevorstehenden M300-Projekt auseinander. Grundsätzlich benötigen wir **nicht viele**  Git-Kommandos. Wir schauen uns aber die wichtigsten Elemente kurz an, damit wir nachher möglichst speditiv und problemlos starten - und den Fortschritt festhalten können.
 
 ### Topics:
-- Git Prozess (Die drei Status, die drei Stages)
+- Git Prozess (Die drei Status, die drei Stages) und weitere Erkärungen
 - Die wichtigsten und am häufgsten gebrauchten Git-Kommandos
 - Inhaltsvorgaben und Bedingungen für das Modul (Verzeichnis etc...)
+
+---
 
 ### Git Prozess (Die drei Status, die drei Stages)
 Wenn wir mit Git arbeiten, sollten wir die drei Status (Mehrzahl von Status ist ebenfalls Status ;-) ) kennen.
@@ -217,7 +219,8 @@ Der Weg einer Änderung an einem File bis zum Versionierten Commit läuft folgen
 
 
 ### Die drei Zustände eines Files
-Auf dem folgenden Bild sind die drei unterschiedlichen Zustände eines Fils nochmals farblich dargestellt. Sobald ein file im Verzeichnis verändert wird (roter Buchstabe "D"), kommt es in den Zustand **Modified**. Wenn die Änderungen abgeschlossen sind und der Bearbeiter damit zufrieden ist, kann er das File mit "git add" in die Staging-Area legen (Rechts Violett). Es ist dann also im Status "Staged" und wartet da, bis der nächste "Commit" erfolgt. Danach ist wird es als "Commited" registriert (links Blau) und ist somit auf dem aktuellsten Stand   
+Auf dem folgenden Bild sind die drei unterschiedlichen Zustände eines Fils nochmals farblich dargestellt. Sobald ein file im Verzeichnis verändert wird (roter Buchstabe "D"), kommt es in den Zustand **Modified**. Wenn die Änderungen abgeschlossen sind und der Bearbeiter damit zufrieden ist, kann er das File mit "git add" in die Staging-Area legen (Rechts Violett). Es ist dann also im Status **Staged** und wartet da, bis der nächste "Commit" erfolgt. Danach ist wird es als **Commited** registriert (links Blau) und ist somit wieder mit der aktuellsten Version gespeichert. <br>
+Nochmals: Diese Transaktionen finden allesamt **lokal** statt. Erst wenn das Repository ge"pushed" wird, ist auch das Origin-Repository auf dem aktuellsten Stand!
 
 
   ![Die drei Status](images/03d_Die_drei_Stages_ALLES.jpg)
@@ -343,3 +346,80 @@ Lokale Tags löschen
 Remote Tags löschen
 
 `$ git push origin --delete v1.5`
+
+
+---
+
+### Die wichtigsten und am häufgsten gebrauchten Git-Kommandos
+...in a Nutshell
+
+  ![Git Befehle](images/03c_Die_drei_Status_GIT-Projekt_Kommandos.jpg)
+
+
+
+Hier kurz und bündig nochmals die mit Abstand wichtigsten Git-Kommandos.<br> 
+**Nicht vergessen**: man **muss** im entsprechenden Projektordner sein
+
+```
+$ cd <Projektordner>
+$ git status
+$ git add .
+$ git commit -m "Nutzvolle Information kurz gehalten"
+$ git push
+``` 
+Arbeitet man kooperativ mit anderen Personen oder auch mit unterschiedlichen Geräten, macht es Sinn, vor dem Verändern **IMMER** noch mit folgendem Kommando das aktuelle Remote-Git-Repo zu synchronisieren:
+
+```
+$ cd <Projektordner>
+$ git pull
+```
+
+
+
+  ![Die drei Status](images/23_Wichtigste-Github-commands-bei-Entw.png)
+
+
+
+---
+
+## Inhaltsvorgaben und Bedingungen für das Modul
+Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen.<br>
+
+### Die Dokumentation soll wie folgt heissen und gegliedert sein:
+
+### Repository-Name: M300-Services 
+
+### Hauptverzeichnis:
+
+* **README.md**
+    * `Einleitung allgemein`
+    <br>_(Summary mit sinnvollen Erklärungen und Links zu Unterverzeichnissen_)
+    * `Inhaltsverzeichnis`:
+    <br>_(An M300-Repo angelehnt - mit ergänzenden Unterverzeichnissen)_
+        * 10-Toolumgebung
+        * 20-Infrastruktur 
+        * 25-Sicherheit 1
+        * 30-Container
+        * 35-Sicherheit 2
+        * 40-Container-Orchestrierung
+        * 50-Add-ons _(Eigene Ergänzungen erwünscht)_
+        * 60-Reflexion _(Lernprozess festgehalten, Form frei wählbar)_
+          
+    * `Einführende, kurz gehaltene Erklärungen zu den Arbeiten (LB1 und B2) `<br>_(Details im entsprechenden Unterordner, siehe unten)_
+
+* **/LB1** Ordner
+    * `README.md` _(1. Einleitung, 2. Inhaltsverzeichnis 3. Service-Aufbau, z.B. Setting Struktur, deklarativer Ablauf 4. Umsetzung, 5. Testing 6. Quellen)_
+    * `/images` Ordner _(Bilder, die zur LB1-Doku verlinkt werden)_
+
+* **/LB2** Ordner
+    * `README.md` _(1. Einleitung, 2. Inhaltsverzeichnis 3. Service-Aufbau, z.B. Setting Struktur, deklarativer Ablauf 4. Umsetzung, 5. Testing 6. Quellen)_
+    * `/images` Ordner _(Bilder, die zur LB2-Doku verlinkt werden)_
+
+* **/images** Ordner
+    * `Nur Bilder oder Screenshots für Gesamtprojekt`
+    <br> _(Alles, ausser LB1 und LB2-Pics/Screenshots)_
+
+
+
+
+# Viel Spass und viel Erfolg
