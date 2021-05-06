@@ -179,12 +179,34 @@ $ git push -u origin main
 
 #### Summary
 - Zuerst wurde das Git-Repository "M300-Services" lokal und remote (Origin) erstellt und verlinkt (Daten werden ab diesem Zeitpunkt getracked und können gepushed und gepulled werden) 
-- Im lokalen Git-Repository wurde das File "README.md" erstellt und commited (wird nun von Git verwaltet und getrackt)
-- Abschliessend wurde mit dem "git push"-Kommando der aktuelle lokale Repo-Inhalt zum "Origin" (Github-Repo) übertragen.  
+- Im lokalen Git-Repository wurde das File "README.md" erstellt und commited. Daten im Verzeichnis werden nun also **lokal** (z.B. Laptop) verwaltet und getrackt.
+- Abschliessend wurde mit dem "git push"-Kommando der aktuelle lokale Repo-Inhalt zum **"Origin"** (Github-Repo, Remote) übertragen.  
 
-Jetzt sind wir bereit, um das Repository aktiv zu bewirtschaften - **IaC** (Infrastructure as Code)
+Jetzt sind wir bereit, um das Repository aktiv zu bewirtschaften - **IaC** (Infrastructure as Code) ready
 
 ---
 
 ## Arbeiten mit GIT ##
+Jetzt, wo alles soweit bereit ist, um loszulegen, setzten wir uns noch kurz mit dem bevorstehenden M300-Projekt auseinander. Grundsätzlich benötigen wir **nicht viele**  Git-Kommandos. Wir schauen uns aber die wichtigsten Elemente kurz an, damit wir nachher möglichst speditiv und problemlos starten - und den Fortschritt festhalten können.
 
+### Topics:
+- Git Prozess (Die drei Status, die drei Stages)
+- Die wichtigsten und am häufgsten gebrauchten Git-Kommandos
+- Inhaltsvorgaben und Bedingungen für das Modul (Verzeichnis etc...)
+
+#### Git Prozess (Die drei Status, die drei Stages)
+Wenn wir mit Git arbeiten, sollten wir die drei Status (Mehrzahl von Status ist ebenfalls Status ;-) ) kennen.
+
+Das folgendes Diagramm hält fest, wann welcher Status erreicht ist:
+
+  ![Die drei Status](images/03b_Die_drei_Status_GIT-Projekt.jpg)
+
+Im **Working Directory** befinden sich alle neuen und veränderten Files, die noch nicht ge"staged" wurden. Ein Beispiel wäre ein neus JPG-File, das ich in das Verzeichnis gelegt habe, um es später zu verlinken und mit Text zu ergänzen
+
+Der Weg einer Änderung an einem File bis zum Versionierten Commit läuft folgendermassen ab
+
+|command | Workplace | Index (Stage)| local Repository |
+|:--:|:--:|:--:|:--:|
+|vi,nano,vsc|File Änderung|||
+|git add||Änderung staged||
+|git commit|||Änderung versioniert|
