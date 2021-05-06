@@ -216,6 +216,15 @@ Der Weg einer Änderung an einem File bis zum Versionierten Commit läuft folgen
   ![Die drei Status](images/03a_Die_drei_Status_GIT-Projekt.jpg)
 
 
+### Die drei Zustände eines Files
+Auf dem folgenden Bild sind die drei unterschiedlichen Zustände eines Fils nochmals farblich dargestellt. Sobald ein file im Verzeichnis verändert wird (roter Buchstabe "D"), kommt es in den Zustand **Modified**. Wenn die Änderungen abgeschlossen sind und der Bearbeiter damit zufrieden ist, kann er das File mit "git add" in die Staging-Area legen (Rechts Violett). Es ist dann also im Status "Staged" und wartet da, bis der nächste "Commit" erfolgt. Danach ist wird es als "Commited" registriert (links Blau) und ist somit auf dem aktuellsten Stand   
+
+
+  ![Die drei Status](images/03d_Die_drei_Stages_ALLES.jpg)
+
+
+
+
 |Command | Working Directoriy | Stage (Index)| local Repository |
 |:--:|:--:|:--:|:--:|
 ||File neu oder geändert|||
