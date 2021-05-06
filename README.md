@@ -136,7 +136,15 @@ Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten 
 Nachdem wir das Repository auf [Github][10] erstellt haben, erhalten wir folgende Informationen, die sehr nützlich sind für die nächsten Schritte  (Import von lokalen Daten, die wir mit dem eben erstellten **"Origin-Repsitory"** synchronisieren und so unter die GIT-Versionskontrolle nehmen wollen).
 <br>
 
-#### Github
+
+
+ ![Was ist Git](images/22_Github-Repo_erstellen.png)
+ <br>
+
+
+
+
+#### Commands die wir daraus nutzen
 
 ```
 echo "# test" >> README.md
