@@ -8,6 +8,8 @@
 
 Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einsteigen können und beim Durcharbeiten gleichzeitig ein Repository mit einer Grundstruktur für das Modul 300 aufsetzen<br>
 
+Das Grundgerüst dieses Tutorials durfte ich von Marco Berger (marco.berger@tbz.ch) übernehmen. Es ist von mir so ergänzt worden, dass die Anwendung im Modul 300 vereinfacht und vereinheitlicht werden soll.        _Vielen Dank Marco, für die Freigabe und die tolle Vorarbeit!_
+
 ## Voraussetzungen:
 - [Github](https://github.com/) Account
 - Windows: [GitBash](https://git-scm.com/downloads) auf dem lokalen Host installiert
@@ -194,19 +196,141 @@ Jetzt, wo alles soweit bereit ist, um loszulegen, setzten wir uns noch kurz mit 
 - Die wichtigsten und am häufgsten gebrauchten Git-Kommandos
 - Inhaltsvorgaben und Bedingungen für das Modul (Verzeichnis etc...)
 
-#### Git Prozess (Die drei Status, die drei Stages)
+### Git Prozess (Die drei Status, die drei Stages)
 Wenn wir mit Git arbeiten, sollten wir die drei Status (Mehrzahl von Status ist ebenfalls Status ;-) ) kennen.
 
-Das folgendes Diagramm hält fest, wann welcher Status erreicht ist:
+Das folgendes Diagramm hält fest, wann welcher Status erreicht ist. <br> **Achtung!** es handelt sich dabei lediglich um das **lokale** Repository
 
   ![Die drei Status](images/03b_Die_drei_Status_GIT-Projekt.jpg)
 
-Im **Working Directory** befinden sich alle neuen und veränderten Files, die noch nicht ge"staged" wurden. Ein Beispiel wäre ein neus JPG-File, das ich in das Verzeichnis gelegt habe, um es später zu verlinken und mit Text zu ergänzen
+Im **Working Directory** befinden sich alle neuen und veränderten Files, die noch nicht fertig bearbeitet sind und deshalb **NICHT** ge"staged" wurden. Ein Beispiel wäre ein neues Dokument, das noch in Bearbeitung ist.
+
+In der **Staging Area** (Index) befinden sich sämtliche Files, die verändert oder neu erstellt wurden und nun soweit fertig bearbeitet sind, um sie mit dem nächsten "Commit" in die Datenbank einzulesen.
+
+Im **Repository** (.git-Directory) befinden sich sämtliche Daten, die bereits schon zu einem früheren Zeitpunkt "Commited" wurden und somit von GIT "getracked" werden.
+
 
 Der Weg einer Änderung an einem File bis zum Versionierten Commit läuft folgendermassen ab
 
-|command | Workplace | Index (Stage)| local Repository |
+
+  ![Die drei Status](images/03a_Die_drei_Status_GIT-Projekt.jpg)
+
+
+|Command | Working Directoriy | Stage (Index)| local Repository |
 |:--:|:--:|:--:|:--:|
-|vi,nano,vsc|File Änderung|||
+||File neu oder geändert|||
 |git add||Änderung staged||
 |git commit|||Änderung versioniert|
+
+
+> mit `git commit -a` kann der Index umgangen werden
+
+---
+#### Arbeiten im Working Directory (lokal)
+
+File oder Verzeichnis unter Git Control löschen
+
+`$ git rm {file} / $ git rm {dir}`
+
+File oder Verzeichnis unter Git Control verschieben
+
+`$ git mv {file} / $ git mv {dir}`
+
+> zum Löschen oder Verschieben immer die **git Kommandos**  `git rm` oder `git mv` verwenden
+
+---
+#### Arbeiten mit dem Index (stage)
+
+Zeigt den aktuellen File Status
+
+`$ git status`
+
+Neues oder geänderte File(s) der Staging-Area zufügen.
+
+`$ git add {file}`
+
+> `git add .` fügt **alle** neuen oder geänderten Files dem Index zu
+
+Ein versehentlich ge-staged File wieder aus dem Index entfernen
+
+`$ git reset HEAD {file}`
+
+#### Inhalt des Staging ansehen
+
+Zeigt was im Worsplace geändert, aber noch nicht im Index (staged) ist.
+
+`$ git diff`
+
+Zeigt was bereits zum Commit vorgemerkt wurde.
+
+`$ git diff --cached`  (auch -- staged)
+
+---
+#### Arbeiten mit dem lokalen Repository
+
+Im Index vorgemerkte Änderungen in das lokale Repository committen
+
+`git commit {file}`
+
+Commit Historie ansehen
+
+`$ git log`
+
+
+Ein im Workplace modifiziertes File wieder auf den Stand des letzter Commit setzen
+
+`$ git checkout -- {file}`
+
+---
+#### Arbeiten mit dem remote Repository
+
+Remote Repository anzeigen
+
+`$ git remote -v`
+
+Alle Änderungen vom remote Repository (origin) in den Workplace laden
+
+`$ git pull` 
+
+> sind Files lokal und remote geändert, entsteht ein Konflikt
+
+Änderungen vom lokalen Repository nach remote pushen
+
+`git push origin`
+
+> vor einem `push` immer zuerst ein `pull` ausführen
+
+---
+#### Arbeiten mit Tags
+
+**Tags** sind wie **Snapshots** - sie halten den Zustand zu einem bestimmten Zeitpunkt fest. So können sie jederzeit wieder auf einen Taged Stand ihrer Umgebung zurückgreifen. 
+
+ > Tagged Versionen sind nicht geeignet um an diesen weiter zu arbeiten. Dazu sieht git **Branches** vor, worauf wir hier nicht weiter eingehen werden.
+
+Vorhandene Tags listen
+
+`$ git tag`
+
+Tag erstellen (Annonated)
+
+`$ git tag -a v1.5 -m "Version 1.5"`
+
+> -a erstellt einen Annonated (Kommentierte) Tag
+
+Tag Content ansehen 
+
+`git tag show v1.5`
+
+Einen spezifischen Tag nach origin pushen
+
+`$ git push origin v1.5`
+
+> `git push origin --tags` alle Tags gleichzeitig pushen
+
+Lokale Tags löschen
+
+`$ git tag -d v1.5`
+
+Remote Tags löschen
+
+`$ git push origin --delete v1.5`
