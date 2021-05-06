@@ -8,7 +8,8 @@
 
 Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einsteigen können und beim Durcharbeiten gleichzeitig ein Repository mit einer Grundstruktur für das Modul 300 aufsetzen<br>
 
-Das Grundgerüst dieses Tutorials durfte ich von Marco Berger (marco.berger@tbz.ch) übernehmen. Es ist von mir so ergänzt worden, dass die Anwendung im Modul 300 vereinfacht und vereinheitlicht werden soll.        _Vielen Dank Marco, für die Freigabe und die umfangreiche Vorarbeit!_
+Das Grundgerüst dieses Tutorials durfte ich von Marco Berger (marco.berger@tbz.ch) übernehmen. Wir hoffen, dass Einstieg, Durchführung und Umsetzung im Modul 300 so gut gelingt und bzgl. Struktur einheitlich ist. <br>
+_Vielen Dank Marco, für die Freigabe und die umfangreiche Vorarbeit!_
 
 ## Voraussetzungen:
 - [Github](https://github.com/) Account
@@ -192,13 +193,14 @@ Jetzt sind wir bereit, um das Repository aktiv zu bewirtschaften - **IaC** (Infr
 Jetzt, wo alles soweit bereit ist, um loszulegen, setzten wir uns noch kurz mit dem bevorstehenden M300-Projekt auseinander. Grundsätzlich benötigen wir **nicht viele**  Git-Kommandos. Wir schauen uns aber die wichtigsten Elemente kurz an, damit wir nachher möglichst speditiv und problemlos starten - und den Fortschritt festhalten können.
 
 ### Topics:
-- Git Prozess (Die drei Status, die drei Stages) und weitere Erkärungen
-- Die wichtigsten und am häufgsten gebrauchten Git-Kommandos
-- Inhaltsvorgaben und Bedingungen für das Modul (Verzeichnis etc...)
+- **[Git Prozess](#Git-Prozess)**
+- **[Die wichtigsten und am häufgsten gebrauchten Git-Kommandos](#Die-wichtigsten-und-am-häufgsten-gebrauchten-Git-Kommandos)**
+- **[Auftrag: Repository mit Inhaltsvorgaben für das M300 erstellen](#Auftrag:-Repository-mit-Inhaltsvorgaben-für-das-M300-erstellen)**
+
 
 ---
 
-### Git Prozess (Die drei Status, die drei Stages)
+### Git Prozess
 Wenn wir mit Git arbeiten, sollten wir die drei Status (Mehrzahl von Status ist ebenfalls Status ;-) ) kennen.
 
 Das folgendes Diagramm hält fest, wann welcher Status erreicht ist. <br> **Achtung!** es handelt sich dabei lediglich um das **lokale** Repository
@@ -382,8 +384,10 @@ $ git pull
 
 ---
 
-## Inhaltsvorgaben und Bedingungen für das Modul
-Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen.<br>
+## Auftrag: Repository mit Inhaltsvorgaben für das M300 erstellen
+
+
+Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen. Das Ziel ist es, dass Sie am Ende des Moduls ein erstes **deklaratives** Script erstellt haben, welches ganz im Sinn von **IAC** (Infrastructure as Code) beides, nämlich "Dokumentation" und "Code" beinhaltet und jederzeit nach Belieben kooperativ weiterentwickelt werden kann.<br>
 
 ### Die Dokumentation soll wie folgt heissen und gegliedert sein:
 
@@ -420,6 +424,10 @@ Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen.<br>
     <br> _(Alles, ausser LB1 und LB2-Pics/Screenshots)_
 
 
+<br>
 
+### **WICHTIG:** Bei Verwendung von nichts selbstgeschriebenem Code **muss die Quelle zwingend angegeben werden**
+
+<br>
 
 # Viel Spass und viel Erfolg
