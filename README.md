@@ -133,8 +133,20 @@ Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten 
 
 
 
-Nachdem wir ein neues Repository in [Github][10] erstellt haben, erhalten wir Informationen (passend zum eben erstellten Repository)  über den Import von existierenden lokalen Folder Strukturen in das eben erstellte remote Repsitory. Die Anweisungen sind fast identisch.
-<br><br>
+Nachdem wir das Repository auf [Github][10] erstellt haben, erhalten wir folgende Informationen, die sehr nützlich sind für die nächsten Schritte  (Import von lokalen Daten, die wir mit dem eben erstellten **"Origin-Repsitory"** synchronisieren und so unter die GIT-Versionskontrolle nehmen wollen).
+<br>
+
+#### Github
+
+```
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:youraccount/test.git
+git push -u origin main
+``` 
 
 ---
 
