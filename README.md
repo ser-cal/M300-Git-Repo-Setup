@@ -177,9 +177,14 @@ $ git remote add origin https://github.com/<Benutzername>/M300-Services.git
 $ git push -u origin main
 ``` 
 
+#### Summary
+- Zuerst wurde das Git-Repository "M300-Services" lokal und remote (Origin) erstellt und verlinkt (Daten werden ab diesem Zeitpunkt getracked und können gepushed und gepulled werden) 
+- Im lokalen Git-Repository wurde das File "README.md" erstellt und commited (wird nun von Git verwaltet und getrackt)
+- Abschliessend wurde mit dem "git push"-Kommando der aktuelle lokale Repo-Inhalt zum "Origin" (Github-Repo) übertragen.  
 
+Jetzt sind wir bereit, um das Repository aktiv zu bewirtschaften - **IaC** (Infrastructure as Code)
 
 ---
 
-<br><br><br>
 ## Arbeiten mit GIT ##
+
