@@ -140,8 +140,32 @@ Screenshot-Beispiel aus [Github][10]:
 
 #### Commands die wir (lokal auf der Gitbash) daraus nutzen
 
+> `$ cd <Hauptverzeichnis>  ` _in das vorgesehene Verzeichnis wechseln_<br>
+> `$ mkdir M300-Services  ` _Repository-Verzeichnis erstellen_ <br>
+> `$ git init  ` _Lokales Git-Repo initialisieren (erstellt .git-Verzeichnis)_ <br>
+> `$ ls -al .git  ` _Checken, ob Metadaten im .git-Verzeichnis vorhanden sind_ <br>
+<br>
+
+#### VCS (Version Control System)
+Das lokale Repo ist ab sofort im entsprechenden Verzeichnis aktiviert (z.B. auf einem Laptop). Wir haben nun also ein lokales **VCS** initialisiert. Es ist allerdings noch **leer** - das macht aber weiter nichts. Um später auch über andere Geräte auf die bald hier abgelegten Daten zuzugreifen und diese Inhalte mit anderen zu teilen (Collaboration, Contribution), muss dieser "Content" auch noch **"global"** verfügbar gemacht werden. Wie bereits erwähnt, gibt es verschiedene Git-Repository-Hosting-Provider, die einen solchen Dienst anbieten (Github, Gitlab, Bitbucket etc..). Sobald ich mein Repo so aufgesetzt ist, nennt sich das Verwaltungssystem meines "Contents" dann nicht mehr **VCS** sondern neu **DVCS** (das **D** wurde ergänzt und steht für **"Distributed"**, also von überall zugreifbar und für verschiedene Personen nutzbar.
+
+
+#### Erster Commit im lokalen Repository (lokal auf der Gitbash)
+Mit den folgenden Kommandos wird ein erstes File im getrackten Verzeichnis erstellt, ge'stage'd und commited. Mit dem "Commit" wird der aktuelle Stand in mein lokales Repository eingepflegt (Snapshot im Metadatenverzeichnis). 
+
+> `$ echo "# M300 Dokumentation" >> README.md  ` _File "README.md" mit Titel erstellen_<br>
+> `$ git add .   ` _Added alle Files im aktuellen Verzeichnis zur "Staging area"._ <br>
+> `$ git commit -m "First Commit  ` _Files werden ab jetzt lokal getracked_ <br>
+> `$ ls -al .git  ` _Checken, ob Metadaten im .git-Verzeichnis vorhanden sind_ <br>
+
+
+
+
+
+
 ```
-echo "# test" >> README.md
+$ cd
+$ echo "# test" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
