@@ -140,8 +140,9 @@ Screenshot-Beispiel aus [Github][10]:
 
 #### Commands die wir (lokal auf der Gitbash) daraus nutzen
 
-> `$ cd <Hauptverzeichnis>  ` _in das vorgesehene Verzeichnis wechseln_<br>
+> `$ cd <Projektverzeichnis> ` _in das vorgesehene Verzeichnis wechseln_<br>
 > `$ mkdir M300-Services  ` _Repository-Verzeichnis erstellen_ <br>
+> `$ cd M300-Services  ` _Ins Repository-Verzeichnis wechseln_ <br>
 > `$ git init  ` _Lokales Git-Repo initialisieren (erstellt .git-Verzeichnis)_ <br>
 > `$ ls -al .git  ` _Checken, ob Metadaten im .git-Verzeichnis vorhanden sind_ 
 
@@ -158,23 +159,22 @@ Mit den folgenden Kommandos wird ein erstes File im getrackten Verzeichnis erste
 > `$ ls -al .git  ` _Checken, ob Metadaten im .git-Verzeichnis vorhanden sind_ 
 
 #### Synchronisation des lokalen Repos mit dem Github-Repository (Origin)
-...jetzt muss das lokale Repository mit dem Remote-Repository gesynched werden, damit ich das kollaborative Arbeiten daran ermögliche. Im nächsten Schritt wird das lokale Repository mit dem auf Github-Repository einmalig "verlinkt". Danach kann das Repository jeweils **ge"pushed"**, **ge"pulled"**, **ge"klont"**, **ge"forked"** oder **ge"branched"** werden. <br> 
-Dies geschieht mit folgendem Kommandeo:
+...jetzt muss das lokale Repository mit dem Remote-Repository gesynched werden, damit ich das kollaborative Arbeiten daran ermögliche. Im nächsten Schritt wird das lokale Repository mit dem auf Github-Repository einmalig "verlinkt". Danach kann das Repository jeweils **ge"pushed"**, **ge"pulled"**, **ge"klont"**, **ge"forked"** oder **ge"branched"** werden. Dies geschieht mit folgendem Kommandeo:
 
 > `$ git remote add origin https://github.com/<Benutzername>/M300-Services.git   ` _Verlinken der Repos_ <br>
 > `$ git push -u origin master   ` _Github-Passwort eingeben und hochladen_
 
 
+Hier nun die Kommandos, wie sie in der richtigen Reihenfolge eingegeben werden (ohne Kommentare)
 
 ```
-$ cd
-$ echo "# test" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin git@github.com:youraccount/test.git
-git push -u origin main
+$ cd <Projektordner>
+$ echo "# M300 Dokumentation" >> README.md
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+$ git remote add origin https://github.com/<Benutzername>/M300-Services.git
+$ git push -u origin main
 ``` 
 
 ---
