@@ -118,7 +118,7 @@ Vorbereitend für das **M300** erstellen wir auf [Github][10], ein neues, leeres
 
 <br>
 
-Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten dient als Beispiel_):
+Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten dient als Beispieleixt_):
 
 > `Repository name:  ` _M300-Services_<br>
 > `Description  ` _Microservices / Containerumgebungen_ <br>
