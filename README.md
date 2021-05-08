@@ -6,7 +6,7 @@
 
 # M300 Einführung GIT und Setup des M300 Repositorys
 
-Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einsteigen können und beim Durcharbeiten gleichzeitig ein Repository mit einer Grundstruktur für das Modul 300 aufsetzen<br>
+Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden in das Thema **GIT** einsteigen können und beim Durcharbeiten gleichzeitig ein Repository mit einer Grundstruktur für das Modul 300 aufsetzen<br>
 
 ## Voraussetzungen:
 - [Github](https://github.com/) Account
@@ -19,9 +19,9 @@ Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einst
 
 2. Im **zweiten Abschnitt** **[Git lokal einrichten und ein erstes Repository initialisieren und synchronisieren](#Git-lokal-einrichten-und-ein-erstes-Repository-initialisieren-und-synchronisieren)** werden die nötigen Schritte erläutert, welche zum Starten mit einem lokalen- und remote Git Repository nötig sind. 
 
-3. Im **dritten Abschnitt**  **[Arbeiten mit Git](#arbeiten-mit-git)** geht es darum, die wichtigsten *Handgriffe* im Umgang mit Git zu lernen.
+3. Im **dritten Abschnitt**  **[Arbeiten mit Git](#arbeiten-mit-git)** geht es darum, die wichtigsten "Handgriffe" im Umgang mit Git zu lernen.
 
-Git ist sehr umfangreich. Für den täglichen Gebrauch reichen aber wenige Kommandos und ein **generelles Verständnis über die Funktionsweise von Git**. Diese sind im **[Pro Git book][21]** (Kapitel 1 und 2) sehr gut beschrieben.  Alle in diesem Dokument verwendeten Kommandos finden sie ebefalls in diesen beiden Kapiteln wieder 
+Git ist sehr umfangreich. Für den täglichen Gebrauch reichen aber wenige Kommandos und ein **generelles Verständnis über die Funktionsweise von Git**. Diese sind im **[Pro Git book][21]** (Kapitel 1 und 2) sehr gut beschrieben.  Alle in diesem Dokument verwendeten Kommandos finden sie ebefalls in diesen beiden Kapiteln wieder.
 
 ---
 
@@ -29,7 +29,7 @@ Git ist sehr umfangreich. Für den täglichen Gebrauch reichen aber wenige Komma
 ## Was ist GIT ##
 
 GIT ist ein sogenanntes **Versionskontrollsystem** (VCS) und wurde Anfang 2005 von Linus Torvalds, dem Initiator des Linux-Kernels, entwickelt. Es erstaunt deshalb nicht, dass GIT konzeptionell ähnlich aufgebaut ist wie ein Linux-Filesystem. <br><br>
-Torvalds wünschte sich ein verteiltes System, welches folgenden Anforderungen erfüllt:
+Torvalds wünschte sich ein verteiltes System, welches folgende Anforderungen erfüllt:
 
 - Unterstützung verteilter Arbeitsabläufe (Mehrere können an einem Projekt arbeiten)
 - Hohe Sicherheit gegen sowohl unbeabsichtigte als auch böswillige Verfälschung
@@ -65,7 +65,7 @@ In diesem Kapitel werden wir zuerst GIT auf dem lokalen Rechner konfigurieren un
 
 > `$ man git ` _Manual Pages_ <br>
 > `$ git help  ` _Allgemeine Hilfe / Quick Reference Porcelaine Commands_ <br>
-> `$ git help config  ` _Spezifische Hilfe (in diesem Fall zu "Configuration"_<br>
+> `$ git help config  ` _Spezifische Hilfe (in diesem Fall zum Begriff "Configuration)_<br>
 
 ### Git Konfigurations Dateien
 
@@ -111,7 +111,7 @@ Als erstes wird auf Github ein Repository erstellt. Danach bringen wir ein *vorh
 
 ### Remote Git Repository erstellen
 
-Vorbereitend für das **M300** erstellen wir auf [Github][10], ein neues, leeres Repository, mit welchem wir weiter unten dann das lokale Repository verknüpfen
+Vorbereitend für das **M300** erstellen wir auf [Github][10] ein neues, leeres Repository, mit welchem wir weiter unten dann das lokale Repository verknüpfen
 
 > Ein hinterlegter **SSH-PublicKey** des lokalen Benutzers/Rechner ist Voraussetzung <br>
 > Das Erstellen und Einrichten ist in den [GitHub Docs][11] ausführlich dokumentiert 
@@ -151,21 +151,21 @@ Das lokale Repo ist ab sofort im entsprechenden Verzeichnis aktiviert (z.B. auf 
 
 
 #### Erster Commit im lokalen Repository (lokal auf der Gitbash)
-Mit den folgenden Kommandos wird ein erstes File (in unserem Fall das README.md) im getrackten Verzeichnis erstellt, ge'stage'd und commited. Mit dem "Commit" wird der aktuelle Stand in mein lokales Repository eingepflegt (Snapshot im Metadatenverzeichnis). 
+Mit den folgenden Kommandos wird ein erstes File (in unserem Fall das README.md) im getrackten Verzeichnis erstellt, ge"stage"d und commited. Mit dem "Commit" wird der aktuelle Stand in mein lokales Repository eingepflegt (Snapshot im Metadatenverzeichnis). 
 
 > `$ echo "# M300 Dokumentation" >> README.md  ` _File "README.md" mit Titel erstellen_<br>
-> `$ git add .   ` _Added alle Files im aktuellen Verzeichnis zur "Staging area"._ <br>
+> `$ git add .   ` _Added alle Files im aktuellen Verzeichnis zur "Staging area"_ <br>
 > `$ git commit -m "First Commit  ` _Files werden ab jetzt lokal getracked_ <br>
 > `$ ls -al .git  ` _Checken, ob Metadaten im .git-Verzeichnis vorhanden sind_ 
 
 #### Synchronisation des lokalen Repos mit dem Github-Repository (Origin)
-...jetzt muss das lokale Repository mit dem Remote-Repository gesynched werden, damit ich das kollaborative Arbeiten daran ermögliche. Im nächsten Schritt wird das lokale Repository mit dem auf Github-Repository einmalig "verlinkt". Danach kann das Repository jeweils **ge"pushed"**, **ge"pulled"**, **ge"klont"**, **ge"forked"** oder **ge"branched"** werden. Dies geschieht mit folgendem Kommandeo:
+...jetzt muss das lokale Repository mit dem Remote-Repository gesynched werden, damit ich das kollaborative Arbeiten daran ermögliche. Im nächsten Schritt wird das lokale Repository mit dem Github-Repository einmalig "verlinkt". Danach kann das Repository jeweils **ge"pushed"**, **ge"pulled"**, **ge"klont"**, **ge"forked"** oder **ge"branched"** werden. Dies geschieht mit folgenden Kommandos:
 
 > `$ git remote add origin https://github.com/<Benutzername>/M300-Services.git   ` _Verlinken der Repos_ <br>
 > `$ git push -u origin master   ` _Github-Passwort eingeben und hochladen_
 
 
-Hier nun die Kommandos, wie sie in der richtigen Reihenfolge eingegeben werden (ohne Kommentare)
+Hier nun sämtliche Kommandos, wie sie in der richtigen Reihenfolge eingegeben werden (ohne Kommentare)
 
 ```
 $ cd <Projektordner>
@@ -178,7 +178,7 @@ $ git push -u origin main
 ``` 
 
 #### Summary
-- Zuerst wurde das Git-Repository "M300-Services" lokal und remote (Origin) erstellt und verlinkt (Daten werden ab diesem Zeitpunkt getracked und können gepushed und gepulled werden) 
+- Zuerst wurde das Git-Repository "M300-Services" lokal und remote (Origin) erstellt und verlinkt (Daten werden ab diesem Zeitpunkt ge"tracked" und können ge"pushed" oder ge"pulled" werden) 
 - Im lokalen Git-Repository wurde das File "README.md" erstellt und commited. Daten im Verzeichnis werden nun also **lokal** (z.B. Laptop) verwaltet und getrackt.
 - Abschliessend wurde mit dem "git push"-Kommando der aktuelle lokale Repo-Inhalt zum **"Origin"** (Github-Repo, Remote) übertragen.  
 
@@ -187,7 +187,7 @@ Jetzt sind wir bereit, um das Repository aktiv zu bewirtschaften - **IaC** (Infr
 ---
 
 ## Arbeiten mit GIT ##
-Jetzt, wo alles soweit bereit ist, um loszulegen, setzten wir uns noch kurz mit dem bevorstehenden M300-Projekt auseinander. Grundsätzlich benötigen wir **nicht viele**  Git-Kommandos. Wir schauen uns aber die wichtigsten Elemente kurz an, damit wir nachher möglichst speditiv und problemlos starten - und den Fortschritt festhalten können.
+Jetzt, wo alles soweit bereit ist um loszulegen, setzten wir uns noch kurz mit dem bevorstehenden M300-Projekt auseinander. Grundsätzlich benötigen wir **nicht viele**  Git-Kommandos. Wir schauen uns aber die wichtigsten Elemente kurz an, damit wir nachher möglichst speditiv und problemlos starten - **und den Fortschritt festhalten** - können.
 
 ### Topics:
 - **[Git Prozess](#Git-Prozess)**
@@ -200,7 +200,7 @@ Jetzt, wo alles soweit bereit ist, um loszulegen, setzten wir uns noch kurz mit 
 ### Git Prozess
 Wenn wir mit Git arbeiten, sollten wir die drei Status (Mehrzahl von Status ist ebenfalls Status ;-) ) kennen.
 
-Das folgendes Diagramm hält fest, wann welcher Status erreicht ist. <br> **Achtung!** es handelt sich dabei lediglich um das **lokale** Repository
+Das folgende Diagramm hält fest, wann welcher Status erreicht ist. <br> **Achtung!** es handelt sich dabei lediglich um das **lokale** Repository
 
   ![Die drei Status](images/03b_Die_drei_Status_GIT-Projekt.jpg)
 
@@ -208,7 +208,7 @@ Im **Working Directory** befinden sich alle neuen und veränderten Files, die no
 
 In der **Staging Area** (Index) befinden sich sämtliche Files, die verändert oder neu erstellt wurden und nun soweit fertig bearbeitet sind, um sie mit dem nächsten "Commit" in die Datenbank einzulesen.
 
-Im **Repository** (.git-Directory) befinden sich sämtliche Daten, die bereits schon zu einem früheren Zeitpunkt "Commited" wurden und somit von GIT "getracked" werden.
+Im **Repository** (.git-Directory) befinden sich sämtliche Daten, die bereits schon zu einem früheren Zeitpunkt "Commited" wurden und somit von GIT ge"tracked" werden.
 
 
 Der Weg einer Änderung an einem File bis zum Versionierten Commit läuft folgendermassen ab
@@ -218,7 +218,7 @@ Der Weg einer Änderung an einem File bis zum Versionierten Commit läuft folgen
 
 
 ### Die drei Zustände eines Files
-Auf dem folgenden Bild sind die drei unterschiedlichen Zustände eines Fils nochmals farblich dargestellt. Sobald ein file im Verzeichnis verändert wird (roter Buchstabe "D"), kommt es in den Zustand **Modified**. Wenn die Änderungen abgeschlossen sind und der Bearbeiter damit zufrieden ist, kann er das File mit "git add" in die Staging-Area legen (Rechts Violett). Es ist dann also im Status **Staged** und wartet da, bis der nächste "Commit" erfolgt. Danach ist wird es als **Commited** registriert (links Blau) und ist somit wieder mit der aktuellsten Version gespeichert. <br>
+Auf dem folgenden Bild sind die drei unterschiedlichen Zustände eines Fils nochmals farblich dargestellt. Sobald ein file im Verzeichnis verändert wird (roter Buchstabe **"D"**), kommt es in den Zustand **Modified**. Wenn die Änderungen abgeschlossen sind und der Bearbeiter damit zufrieden ist, kann er das File mit "git add" in die Staging-Area legen (Rechts Violett). Es ist dann also im Status **Staged** und wartet da, bis der nächste "Commit" erfolgt. Danach wird es als **Commited** registriert (links Blau) und ist somit wieder mit der aktuellsten Version gespeichert. <br>
 Nochmals: Diese Transaktionen finden allesamt **lokal** statt. Erst wenn das Repository ge"pushed" wird, ist auch das Origin-Repository auf dem aktuellsten Stand!
 
 
@@ -256,7 +256,7 @@ Zeigt den aktuellen File Status
 
 `$ git status`
 
-Neues oder geänderte File(s) der Staging-Area zufügen.
+Neues oder geänderte File(s) der Staging-Area zufügen
 
 `$ git add {file}`
 
@@ -268,11 +268,11 @@ Ein versehentlich ge-staged File wieder aus dem Index entfernen
 
 #### Inhalt des Staging ansehen
 
-Zeigt was im Worsplace geändert, aber noch nicht im Index (staged) ist.
+Zeigt was im Worsplace geändert, aber noch nicht im Index (staged) ist
 
 `$ git diff`
 
-Zeigt was bereits zum Commit vorgemerkt wurde.
+Zeigt was bereits zum Commit vorgemerkt wurde
 
 `$ git diff --cached`  (auch -- staged)
 
@@ -366,7 +366,7 @@ $ git add .
 $ git commit -m "Nutzvolle Information kurz gehalten"
 $ git push
 ``` 
-Arbeitet man kooperativ mit anderen Personen oder auch mit unterschiedlichen Geräten, macht es Sinn, vor dem Verändern **IMMER** noch mit folgendem Kommando das aktuelle Remote-Git-Repo zu synchronisieren:
+Arbeitet man kooperativ mit anderen Personen oder auch mit unterschiedlichen Geräten, macht es Sinn, vor dem Verändern **IMMER** noch mit folgendem Kommando das aktuelle Remote-Git-Repo zu synchronisieren (da es möglich ist, dass in der Zwischenzeit Änderungen von jemand anders vorgenommen wurden)
 
 ```
 $ cd <Projektordner>
@@ -383,7 +383,7 @@ $ git pull
 
 ## Repository mit Inhaltsvorgaben für das M300 erstellen
 
-Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen. Das Ziel ist es, dass Sie am Ende des Moduls ein erstes **deklaratives** Script erstellt haben, welches ganz im Sinn von **IAC** (Infrastructure as Code) beides, nämlich "Dokumentation" und "Code" beinhaltet und jederzeit nach Belieben kooperativ weiterentwickelt werden kann.<br>
+Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen. Das Ziel ist es, dass Sie am Ende des Moduls ein erstes **deklaratives** Script erstellt haben, welches ganz im Sinn von **IAC** (Infrastructure as Code) beides, nämlich "Dokumentation" und "Code" beinhaltet und jederzeit nach Belieben und auch kooperativ weiterentwickelt werden kann.<br>
 
 ### Die Dokumentation soll wie folgt heissen und gegliedert sein:
 
