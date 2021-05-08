@@ -192,7 +192,7 @@ Jetzt, wo alles soweit bereit ist, um loszulegen, setzten wir uns noch kurz mit 
 ### Topics:
 - **[Git Prozess](#Git-Prozess)**
 - **[Die wichtigsten und am häufgsten gebrauchten Git-Kommandos](#Die-wichtigsten-und-am-häufgsten-gebrauchten-Git-Kommandos)**
-- **[Auftrag: Repository mit Inhaltsvorgaben für das M300 erstellen](#Auftrag\:-Repository-mit-Inhaltsvorgaben-für-das-M300-erstellen)**
+- **[Auftrag: Repository mit Inhaltsvorgaben für das M300 erstellen](#Auftrag:-Repository-mit-Inhaltsvorgaben-für-das-M300-erstellen)**
 
 
 ---
