@@ -8,9 +8,6 @@
 
 Ziel dieses Projektes (Tutorials) ist es, dass die Lernenden ins Thema GIT einsteigen können und beim Durcharbeiten gleichzeitig ein Repository mit einer Grundstruktur für das Modul 300 aufsetzen<br>
 
-Das Grundgerüst dieses Tutorials durfte ich von Marco Berger (marco.berger@tbz.ch) übernehmen. Wir hoffen, dass Einstieg, Durchführung und Umsetzung im Modul 300 so gut gelingt und bzgl. Struktur einheitlich ist. <br>
-_Vielen Dank Marco, für die Freigabe und die umfangreiche Vorarbeit!_
-
 ## Voraussetzungen:
 - [Github](https://github.com/) Account
 - Windows: [GitBash](https://git-scm.com/downloads) auf dem lokalen Host installiert
@@ -431,3 +428,6 @@ Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen. Das Ziel ist es, das
 <br>
 
 # Viel Spass und viel Erfolg
+
+- - -
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/ch/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/ch/88x31.png" /></a><br />Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/ch/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 3.0 Schweiz Lizenz</a>.
