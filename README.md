@@ -187,7 +187,7 @@ Jetzt sind wir bereit, um das Repository aktiv zu bewirtschaften - **IaC** (Infr
 ---
 
 ## Arbeiten mit GIT ##
-Jetzt, wo alles soweit bereit ist um loszulegen, setzten wir uns noch kurz mit dem bevorstehenden M300-Projekt auseinander. Grundsätzlich benötigen wir **nicht viele**  Git-Kommandos. Wir schauen uns aber die wichtigsten Elemente kurz an, damit wir nachher möglichst speditiv und problemlos starten - **und den Fortschritt festhalten** - können.
+Jetzt, wo alles soweit bereit ist um loszulegen, setzten wir uns noch kurz mit dem bevorstehenden M300-Projekt auseinander. Grundsätzlich benötigen wir **nicht viele**  Git-Kommandos. Wir schauen uns aber die wichtigsten Elemente kurz an, damit wir nachher möglichst speditiv und problemlos starten - **und den Fortschritt festhalten** - können
 
 ### Topics:
 - **[Git Prozess](#Git-Prozess)**
