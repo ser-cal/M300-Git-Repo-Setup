@@ -383,7 +383,7 @@ $ git pull
 
 ## Repository mit Inhaltsvorgaben für das M300 erstellen
 
-Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen. Das Ziel ist es, dass Sie am Ende des Moduls ein erstes **deklaratives** Script erstellt haben, welches ganz im Sinn von **IAC** (Infrastructure as Code) beides, nämlich "Dokumentation" und "Code" beinhaltet und jederzeit nach Belieben und auch kooperativ weiterentwickelt werden kann.<br>
+Nun haben Sie die notwendigen Vorkenntnisse, um loszulegen. Das Ziel ist es, dass Sie am Ende des Moduls ein erstes **deklaratives** Script erstellt haben, welches ganz im Sinn von **IAC** (Infrastructure as Code) beides, nämlich **"Dokumentation"** und **"Code"** beinhaltet und jederzeit nach Belieben und auch kooperativ weiterentwickelt werden kann.<br>
 
 ### Die Dokumentation soll wie folgt heissen und gegliedert sein:
 
