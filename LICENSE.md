@@ -1,4 +1,4 @@
-Dieses Projekt steht unter der Lizenz CC BY-NC-SA 3.0 CH
+Dieses Repository steht unter der Lizenz CC BY-NC-SA 3.0 CH
 
 # Sie dürfen:
 **Teilen** — das Material in jedem Format oder Medium vervielfältigen und weiterverbreiten
