@@ -72,7 +72,7 @@ In diesem Kapitel werden wir zuerst GIT auf dem lokalen Rechner konfigurieren un
 Git hat folgende Konfigurationsdateien. Jede Ebene überschreibt die obige
 
 * **System** ( --system )
-    * `/etc/gitconfig` oder `c:\Program Files\Git\etc`
+    * `/etc/gitconfig` oder `<git-install-root>\mingw64\etc\gitconfig`
 * **Personal** ( --global )
     * `~/.gitconfig` oder `%HOMEPATH%/.gitconfig`
 * **Repository** ( --local )
