@@ -141,7 +141,7 @@ Screenshot-Beispiel aus [Github][10]:
 ### lokal vorhandene Daten dem neu erstellten Github Repository zufügen
 Um lokale vorhandene Files und Verzeichnisse dem eben auf Github erstellten Repository zuzufügen, führen wir nun die Schritte wie sie sie unter ***...or create a new repository on the command line*** beim Erstellen des Repository vorgeschlagen wurden durch. In unserem Beispiel werden wir ein neues Verzeichnis mit einer *README.md* Datei erstellen. Es könnte aber genauso gut ein vorhandenes Verzeichnis sein, welches bereits Files und Folders enthält und auf diese Weise unter Git Kontrolle gebracht und mit dem eben erstellten Github Repository verknüpft werden.
 
-> Existieren zu einem neun erstellten Github Repsiotry lokal noch keine Files und Verzeichnisse, könnte ansztelle der in der Folge aufgezeigten Befehle einfach ein `git clone <neu erstelltes Repository>` ausgeführt werden.
+> Existieren zu einem neun erstellten Github Repsiotry lokal noch keine Files und Verzeichnisse, könnte anstelle der in der Folge aufgezeigten Befehle einfach ein `git clone <neu erstelltes Repository>` ausgeführt werden.
 
 
 #### Commands die wir (lokal auf der Gitbash) daraus nutzen
