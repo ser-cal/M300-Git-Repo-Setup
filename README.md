@@ -111,7 +111,7 @@ Als erstes wird auf Github ein Repository erstellt. Danach bringen wir ein *vorh
 
 ### Remote Git Repository erstellen
 
-Vorbereitend für das **M300** erstellen wir auf [Github][10] ein neues, leeres Repository, mit welchem wir weiter unten dann das lokale Repository verknüpfen
+Vorbereitend für das **M300** erstellen wir auf [Github][10] ein neues, **leeres** Repository, mit welchem wir weiter unten dann das lokale Repository verknüpfen
 
 > Ein hinterlegter **SSH-PublicKey** des lokalen Benutzers/Rechner ist Voraussetzung <br>
 > Das Erstellen und Einrichten ist in den [GitHub Docs][11] ausführlich dokumentiert 
