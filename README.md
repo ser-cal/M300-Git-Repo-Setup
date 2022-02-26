@@ -122,7 +122,7 @@ Folgende Settings für das [Github][10]-Repo sind vorgesehen (_Screenshot unten 
 
 > `Repository name:  ` _M300-Services_<br>
 > `Description  ` _Microservices / Containerumgebungen_ <br>
-> `Private:  ` _Repo auf "Private" setzen und LP einladen_<br>
+> `Private:  ` _Repo auf "Private" setzen und später LP einladen_<br>
 > `Initialize this repository with:  ` _NICHTS ankreuzen - erfolgt zu einem späteren Zeitpunkt_ <br>
 
 
@@ -138,13 +138,19 @@ Screenshot-Beispiel aus [Github][10]:
  ![Was ist Git](images/22_Github-Repo_erstellen.png)
  <br>
 
+### lokal vorhandene Daten dem neu erstellten Github Repository zufügen
+Um lokale vorhandene Files und Verzeichnisse dem eben auf Github erstellten Repository zuzufügen, führen wir nun die Schritte wie sie sie unter ***...or create a new repository on the command line*** beim Erstellen des Repository vorgeschlagen wurden durch. In unserem Beispiel werden wir ein neues Verzeichnis mit einer Datei erstellen. Es könnte aber genauso gut ein vorhandenes Verzeichnis sein, welches bereits Files und Folders enthält und auf diese Weise unter Git Kontrolle gebracht und mit dem eben erstellten Github Repository verknüpft werden.
+
+> Existieren zu einem neun erstellten Github Repsiotry lokal noch keine Files und Verzeichnisse, könnte ansztelle der in der Folge aufgezeigten Befehle einfach ein `git clone <neu erstelltes Repository>` ausgeführt werden.
+
+
 #### Commands die wir (lokal auf der Gitbash) daraus nutzen
 
-> `$ cd <Projektverzeichnis> ` _in das vorgesehene Verzeichnis wechseln_<br>
-> `$ mkdir M300-Services  ` _Repository-Verzeichnis erstellen_ <br>
+> `$ cd <Projektverzeichnis> ` _irgend ein Verzeichnis, welches **nicht** unter Git Kontrolle ist_<br>
+> `$ mkdir M300-Services  ` _künftiges Repository-Verzeichnis erstellen_ <br>
 > `$ cd M300-Services  ` _Ins Repository-Verzeichnis wechseln_ <br>
 > `$ git init  ` _Lokales Git-Repo initialisieren (erstellt .git-Verzeichnis)_ <br>
-> `$ ls -al .git  ` _Checken, ob Metadaten im .git-Verzeichnis vorhanden sind_ 
+> `$ ls -al ` _nach dem *init* Befehl existiert neu das .git Verzeichnis, welches u.a. das locale Repository enthält_ 
 
 #### VCS (Version Control System)
 Das lokale Repo ist ab sofort im entsprechenden Verzeichnis aktiviert (z.B. auf einem Laptop). Wir haben nun also ein lokales **VCS** initialisiert. Es ist allerdings noch **leer**. Das macht aber weiter nichts. Um später auch über andere Geräte auf die bald hier abgelegten Daten zuzugreifen und diese Inhalte mit anderen zu teilen (Collaboration, Contribution), muss dieser "Content" auch noch **"global"** verfügbar gemacht werden. Wie bereits erwähnt, gibt es verschiedene Git-Repository-Hosting-Provider, die einen solchen Dienst anbieten (Github, Gitlab, Bitbucket etc..). Sobald mein Repo so aufgesetzt ist, nennt sich das Verwaltungssystem meines "Contents" dann nicht mehr **VCS** sondern neu **DVCS** (das **D** wurde ergänzt und steht für **"Distributed"**, also von überall zugreifbar und für verschiedene Personen nutzbar).
@@ -155,8 +161,8 @@ Mit den folgenden Kommandos wird ein erstes File (in unserem Fall das README.md)
 
 > `$ echo "# M300 Dokumentation" >> README.md  ` _File "README.md" mit Titel erstellen_<br>
 > `$ git add .   ` _Added alle Files im aktuellen Verzeichnis zur "Staging area"_ <br>
-> `$ git commit -m "First Commit  ` _Files werden ab jetzt lokal getracked_ <br>
-> `$ ls -al .git  ` _Checken, ob Metadaten im .git-Verzeichnis vorhanden sind_ 
+> `$ git commit -m "First Commit"` _Files werden ab jetzt lokal getracked_ <br>
+> `$ git log` _Log Eintrag des eben ausgeführten Commits zeigen_ 
 
 #### Synchronisation des lokalen Repos mit dem Github-Repository (Origin)
 ...jetzt muss das lokale Repository mit dem Remote-Repository gesynched werden, damit ich das kollaborative Arbeiten daran ermögliche. Im nächsten Schritt wird das lokale Repository mit dem Github-Repository einmalig "verlinkt". Danach kann das Repository jeweils **ge"pushed"**, **ge"pulled"**, **ge"klont"**, **ge"forked"** oder **ge"branched"** werden. Dies geschieht mit folgenden Kommandos:
